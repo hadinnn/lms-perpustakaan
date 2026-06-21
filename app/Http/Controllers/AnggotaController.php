@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Anggota;
 use App\Models\Transaksi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class AnggotaController extends Controller
 {
@@ -93,6 +94,9 @@ class AnggotaController extends Controller
 
     public function destroy(Anggota $anggota)
     {
+        // Hanya Admin yang boleh menghapus data anggota
+        Gate::authorize('hapus-anggota');
+
         // Validasi: tidak boleh hapus jika ada transaksi aktif
         if ($anggota->transaksiAktif()->exists()) {
             return back()->with('error', 'Anggota tidak dapat dihapus karena memiliki transaksi aktif.');

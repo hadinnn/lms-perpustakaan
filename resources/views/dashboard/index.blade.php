@@ -5,8 +5,6 @@
 @section('content')
 {{-- ═══════════════════════════════════════════════════════════════════════════
      HERO BANNER — full-bleed, tidak ada card wrapper, flush ke semua sisi
-     Seperti pola yang digunakan GitHub, Linear, Vercel, dan Notion:
-     banner header melebar penuh tanpa rounded corner di tepi halaman.
 ════════════════════════════════════════════════════════════════════════════ --}}
 <div class="relative overflow-hidden" style="background: linear-gradient(135deg, #00236f 0%, #0c2d7a 50%, #1a1f5e 100%); padding: 36px 32px 32px;">
     {{-- Dekorasi pattern latar --}}
@@ -106,6 +104,72 @@
             </div>
         </div>
     </div>
+
+    {{-- ═══════ CHART SECTION ═══════ --}}
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        {{-- Bar Chart: Transaksi 6 Bulan Terakhir (kiri, lebar 2/3) --}}
+        <div class="card lg:col-span-2 space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-title-lg font-bold text-on-surface">Statistik Peminjaman</h3>
+                    <p class="text-[12px] text-on-surface-variant mt-0.5">Jumlah peminjaman & pengembalian buku 6 bulan terakhir</p>
+                </div>
+                <span class="material-symbols-outlined text-primary" style="font-size:22px; display:block;">bar_chart</span>
+            </div>
+            <div style="position: relative; height: 260px;">
+                <canvas id="chartPeminjaman"></canvas>
+            </div>
+            {{-- Legend --}}
+            <div class="flex gap-5 justify-center text-[12px] font-semibold text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full inline-block" style="background:#00236f;"></span> Peminjaman
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full inline-block" style="background:#15803d;"></span> Pengembalian
+                </span>
+            </div>
+        </div>
+
+        {{-- Donut Chart: Status Stok Buku (kanan, 1/3) --}}
+        <div class="card space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-title-lg font-bold text-on-surface">Status Koleksi</h3>
+                    <p class="text-[12px] text-on-surface-variant mt-0.5">Ketersediaan stok buku saat ini</p>
+                </div>
+                <span class="material-symbols-outlined text-emerald-600" style="font-size:22px; display:block;">donut_large</span>
+            </div>
+            <div style="position: relative; height: 220px;" class="flex items-center justify-center">
+                <canvas id="chartStatusBuku"></canvas>
+            </div>
+            {{-- Donut Legend --}}
+            <div class="space-y-2 pt-1">
+                <div class="flex justify-between items-center text-[13px]">
+                    <span class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full" style="background:#15803d; display:inline-block;"></span>
+                        <span class="text-on-surface-variant">Tersedia</span>
+                    </span>
+                    <span class="font-bold text-on-surface">{{ $bukuTersedia }}</span>
+                </div>
+                <div class="flex justify-between items-center text-[13px]">
+                    <span class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full" style="background:#2563eb; display:inline-block;"></span>
+                        <span class="text-on-surface-variant">Sedang Dipinjam</span>
+                    </span>
+                    <span class="font-bold text-on-surface">{{ $bukuDipinjam }}</span>
+                </div>
+                <div class="flex justify-between items-center text-[13px]">
+                    <span class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full" style="background:#dc2626; display:inline-block;"></span>
+                        <span class="text-on-surface-variant">Stok Habis</span>
+                    </span>
+                    <span class="font-bold text-on-surface">{{ $bukuHabis }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- ═══════ END CHART SECTION ═══════ --}}
 
     {{-- Main Columns --}}
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -225,3 +289,115 @@
 
 </div>
 @endsection
+
+@push('scripts')
+{{-- Chart.js CDN --}}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+    // ── Data dari controller (PHP → JSON) ───────────────────────────────────────
+    const chartLabels  = @json($chartLabels);
+    const chartPinjam  = @json($chartPinjam);
+    const chartKembali = @json($chartKembali);
+
+    const bukuTersedia = {{ $bukuTersedia }};
+    const bukuDipinjam = {{ $bukuDipinjam }};
+    const bukuHabis    = {{ $bukuHabis }};
+
+    // ── Chart 1: Bar Chart — Transaksi Peminjaman 6 Bulan Terakhir ─────────────
+    const ctxBar = document.getElementById('chartPeminjaman').getContext('2d');
+    new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+            labels: chartLabels,
+            datasets: [
+                {
+                    label: 'Peminjaman',
+                    data: chartPinjam,
+                    backgroundColor: 'rgba(0, 35, 111, 0.8)',
+                    borderColor: '#00236f',
+                    borderWidth: 1,
+                    borderRadius: 6,
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Pengembalian',
+                    data: chartKembali,
+                    backgroundColor: 'rgba(21, 128, 61, 0.75)',
+                    borderColor: '#15803d',
+                    borderWidth: 1,
+                    borderRadius: 6,
+                    borderSkipped: false,
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#1e293b',
+                    titleFont: { size: 12, weight: 'bold' },
+                    bodyFont: { size: 12 },
+                    padding: 10,
+                    cornerRadius: 8,
+                }
+            },
+            scales: {
+                x: {
+                    grid: { display: false },
+                    ticks: { font: { size: 11 }, color: '#757682' }
+                },
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1,
+                        font: { size: 11 },
+                        color: '#757682',
+                        callback: (val) => Number.isInteger(val) ? val : ''
+                    },
+                    grid: { color: '#eaeef2' }
+                }
+            }
+        }
+    });
+
+    // ── Chart 2: Donut Chart — Status Koleksi Buku ─────────────────────────────
+    const ctxDonut = document.getElementById('chartStatusBuku').getContext('2d');
+    new Chart(ctxDonut, {
+        type: 'doughnut',
+        data: {
+            labels: ['Tersedia', 'Sedang Dipinjam', 'Stok Habis'],
+            datasets: [{
+                data: [bukuTersedia, bukuDipinjam, bukuHabis],
+                backgroundColor: [
+                    'rgba(21, 128, 61, 0.85)',
+                    'rgba(37, 99, 235, 0.85)',
+                    'rgba(220, 38, 38, 0.85)',
+                ],
+                borderColor: ['#15803d', '#2563eb', '#dc2626'],
+                borderWidth: 2,
+                hoverOffset: 8,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '68%',
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#1e293b',
+                    titleFont: { size: 12, weight: 'bold' },
+                    bodyFont: { size: 12 },
+                    padding: 10,
+                    cornerRadius: 8,
+                    callbacks: {
+                        label: (ctx) => ` ${ctx.label}: ${ctx.parsed} buku`
+                    }
+                }
+            }
+        }
+    });
+</script>
+@endpush

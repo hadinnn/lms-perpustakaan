@@ -8,6 +8,7 @@ use App\Models\Transaksi;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -51,6 +52,32 @@ class DashboardController extends Controller
             default                  => 'Selamat Malam',
         };
 
+        // ── Chart 1: Transaksi per bulan (6 bulan terakhir) ─────────────────────
+        $chartLabels = [];
+        $chartPinjam = [];
+        $chartKembali = [];
+
+        for ($i = 5; $i >= 0; $i--) {
+            $bulan = Carbon::now()->startOfMonth()->subMonths($i);
+            $chartLabels[] = $bulan->translatedFormat('M Y');
+
+            $chartPinjam[] = Transaksi::whereYear('tanggal_pinjam', $bulan->year)
+                ->whereMonth('tanggal_pinjam', $bulan->month)
+                ->count();
+
+            $chartKembali[] = Transaksi::whereNotNull('tanggal_kembali')
+                ->whereYear('tanggal_kembali', $bulan->year)
+                ->whereMonth('tanggal_kembali', $bulan->month)
+                ->count();
+        }
+
+        // ── Chart 2: Status stok buku (donut) ───────────────────────────────────
+        $bukuTersedia  = Buku::where('status', 'tersedia')->count();
+        $bukuHabis     = Buku::where('status', 'habis')->count();
+        $bukuDipinjam  = Transaksi::where('status', 'dipinjam')
+                            ->orWhere('status', 'terlambat')
+                            ->distinct('buku_id')->count('buku_id');
+
         return view('dashboard.index', compact(
             'totalBuku',
             'totalAnggota',
@@ -59,7 +86,15 @@ class DashboardController extends Controller
             'aktivitasTerbaru',
             'terlambat',
             'mendekatiJatuhTempo',
-            'salam'
+            'salam',
+            // Chart data
+            'chartLabels',
+            'chartPinjam',
+            'chartKembali',
+            'bukuTersedia',
+            'bukuHabis',
+            'bukuDipinjam'
         ));
     }
 }
+

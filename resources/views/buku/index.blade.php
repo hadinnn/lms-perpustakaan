@@ -156,7 +156,8 @@
                                    class="p-2 text-amber-600 hover:bg-amber-50 rounded-lg transition-all">
                                     <span class="material-symbols-outlined text-lg">edit</span>
                                 </a>
-                                {{-- Hapus --}}
+                                {{-- Hapus — hanya Admin --}}
+                                @can('hapus-buku')
                                 <form method="POST" action="{{ route('buku.destroy', $bk->id) }}" class="inline" onsubmit="return confirm('Apakah Anda yakin ingin menghapus buku {{ $bk->judul }}?')">
                                     @csrf
                                     @method('DELETE')
@@ -166,6 +167,7 @@
                                         <span class="material-symbols-outlined text-lg">delete</span>
                                     </button>
                                 </form>
+                                @endcan
                             </div>
                         </td>
                     </tr>

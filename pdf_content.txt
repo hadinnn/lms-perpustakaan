@@ -1,0 +1,1165 @@
+Total pages: 52
+
+============================================================
+=== PAGE 1 ===
+============================================================
+Program Studi : Sistem Informasi
+Mata Kuliah : Pengembangan Aplikasi Web I
+LAPORAN
+PROYEK MAHASISWA
+GDeBook
+KELOMPOK
+1. Herlin Dwi Vitaloka NPM : 2327240034
+2. Mayang Sari Nr NPM : 2327240064
+3. Gledys Apriliana NPM : 2327240140
+KELAS SI4A
+UNIVERSITAS MULTI DATA PALEMBANG
+SEMESTER GENAP TAHUN AKADEMIK 2024/2025
+
+============================================================
+=== PAGE 2 ===
+============================================================
+IDENTITAS DAN URAIAN UMUM
+1. Judul Proyek
+GDeBook
+2. Kelompok Pengusul
+No Nama Jabatan Program Fakultas Alokasi Waktu
+Studi (Jam/Minggu)
+1 Herlin Dwi Vitaloka Ketua Sistem Fakultas Ilmu 20 Jam /
+Informasi Komputer dan Minggu
+Rekayasa
+2 Mayang Sari Nr Anggota Sistem Fakultas Ilmu 20 Jam /
+Informasi Komputer dan Minggu
+Rekayasa
+3 Gledys Apriliana Anggota Sistem Fakultas Ilmu 20 Jam /
+Informasi Komputer dan Minggu
+Rekayasa
+3. Objek Proyek
+Perpustakaan
+4. Masa Pelaksanaan
+Mulai : Bulan : April Tahun : 2025
+Berakhir : Bulan : Juni Tahun : 2025
+5. Lokasi Pengerjaan Proyek
+Kampus A Universitas Multi Data Palembang
+6. Instansi Lain yang Terlibat
+-
+7. Output yang Ditargetkan
+Output yang ditargetkan dari proyek ini adalah sebuah aplikasi website perpustakaan digital
+bernama GDeBook yang dikembangkan untuk mempermudah pengelolaan layanan perpustakaan
+secara daring. Aplikasi ini dirancang agar dapat diakses melalui perangkat komputer maupun
+ponsel, serta dilengkapi dengan berbagai fitur utama seperti manajemen data buku, pengelolaan
+data anggota, peminjaman dan pengembalian buku, serta tampilan dashboard statistik dan review
+pengguna pada buku. Dengan desain antarmuka modern yang responsif dan berbasis prototipe
+dari Figma, GDeBook menghadirkan pengalaman pengguna yang interaktif dan menarik. Selain
+itu, aplikasi ini juga mendukung pencarian koleksi buku, menampilkan daftar buku populer, serta
+menyediakan sistem login dan register bagi pustakawan. Melalui pengembangan ini, GDeBook
+diharapkan menjadi solusi digital yang efektif dalam mendukung aktivitas literasi dan manajemen
+perpustakaan di era digital.
+ii
+
+============================================================
+=== PAGE 3 ===
+============================================================
+8. Kontribusi Mendasar pada Suatu Bidang Ilmu
+Proyek pengembangan aplikasi GDeBook memberikan kontribusi mendasar dalam bidang
+teknologi informasi, pendidikan, dan literasi digital. Aplikasi ini dirancang sebagai perpustakaan
+digital yang menyediakan akses mudah dan cepat terhadap berbagai koleksi bahan bacaan dalam
+bentuk elektronik, mulai dari buku teks pelajaran, jurnal, karya ilmiah, hingga bahan bacaan
+populer.
+GDeBook mengintegrasikan sistem manajemen perpustakaan yang modern dengan platform
+digital yang user-friendly dan dapat diakses melalui perangkat komputer maupun ponsel. Inovasi
+ini memungkinkan proses peminjaman, pencarian, dan pembacaan buku dilakukan secara daring
+tanpa batasan ruang dan waktu. Dengan begitu, aplikasi ini dapat membantu menciptakan
+lingkungan belajar yang terbuka untuk semua orang dan bisa menyesuaikan diri dengan
+perkembangan teknologi
+Selain itu, GDeBook juga turut serta dalam mendorong transformasi digital di lingkungan
+pendidikan dan lembaga informasi. Website ini mendukung pembelajaran di bidang sistem
+informasi perpustakaan, membantu mengelola koleksi digital dengan lebih baik, dan menjadi
+contoh nyata pemanfaatan teknologi untuk meningkatkan literasi dan minat baca masyarakat.
+Karena itu, proyek GDeBook tidak hanya menjadi solusi teknologi, tapi juga berkontribusi nyata
+dalam mempercepat akses informasi dan pengetahuan di era digital.
+9. Rencana Luaran
+Rencana luaran dari proyek yang diusulkan dalam proposal ini adalah aplikasi web GDeBook
+yang berfungsi sebagai sistem manajemen perpustakaan digital berbasis Laravel, serta pengajuan
+Hak Atas Kekayaan Intelektual (HAKI) sebagai bentuk perlindungan terhadap karya perangkat
+lunak yang dikembangkan.
+iii
+
+============================================================
+=== PAGE 4 ===
+============================================================
+DAFTAR ISI
+HALAMAN PENGESAHAN ............................................................................................................. i
+IDENTITAS DAN URAIAN UMUM ............................................................................................... ii
+DAFTAR ISI ...................................................................................................................................... iv
+RINGKASAN ..................................................................................................................................... v
+BAB 1. PENDAHULUAN ................................................................................................................. 1
+1. 1. Latar Belakang ..................................................................................................................... 1
+1. 2. Perumusan Masalah ............................................................................................................. 1
+1. 3. Tujuan .................................................................................................................................. 2
+1. 4. Ruang Lingkup ..................................................................................................................... 2
+1. 5. Sistematika Proposal ............................................................................................................ 2
+BAB 2. TINJAUAN PUSTAKA ........................................................................................................ 4
+2. 1. Perpustakaan ........................................................................................................................ 4
+2. 2. Website................................................................................................................................. 6
+2. 3. Visual Studio Code .............................................................................................................. 6
+2.4. Laravel ................................................................................................................................. 7
+2.5. Blade .................................................................................................................................... 7
+2.6. Boostrap ............................................................................................................................... 7
+2.7. Prototyping ........................................................................................................................... 8
+2.8. PHP ...................................................................................................................................... 8
+2.9. MySQL................................................................................................................................. 8
+2.10. Figma ................................................................................................................................... 9
+BAB 3. METODE ............................................................................................................................. 10
+3. 1. Metode Pengembangan Perangkat Lunak .......................................................................... 10
+3. 2. Analisis Kebutuhan ............................................................................................................ 11
+3. 2. 1. Analisis Kebutuhan Fungsional ...................................................................................... 11
+3. 2. 2. Analisis Desain Antarmuka ............................................................................................ 13
+BAB 4. HASIL DAN PEMBAHASAN ........................................................................................... 28
+4. 1. Teknologi ........................................................................................................................... 28
+4. 2. Fitur Aplikasi ..................................................................................................................... 29
+4.3. Repositori ........................................................................................................................... 30
+4. 4. Antarmuka .......................................................................................................................... 32
+BAB 5. KESIMPULAN DAN SARAN ........................................................................................... 46
+5. 1. Kesimpulan ........................................................................................................................ 46
+5. 2. Saran................................................................................................................................... 46
+DAFTAR PUSTAKA ....................................................................................................................... 47
+iv
+
+============================================================
+=== PAGE 5 ===
+============================================================
+RINGKASAN
+Proyek berjudul Aplikasi website GDeBook merupakan proyek akhir mata kuliah Program
+Studi Sistem Informasi Universitas Multi Data Palembang. Proyek ini bertujuan mengembangkan
+aplikasi website interaktif untuk memudahkan pengelolaan dan akses layanan perpustakaan secara
+digital. Aplikasi website ini dirancang untuk memberikan informasi lengkap tentang koleksi buku,
+peminjaman, pengembalian, serta memantau jumlah anggota dan buku paling banyak dipinjam secara
+real-time.
+Dengan memanfaatkan teknologi framework Laravel, pengembangan dilakukan
+menggunakan metode prototyping untuk memastikan fleksibilitas dan efisiensi selama proses
+pengembangan. Aplikasi website “GDeBook” akan dilengkapi berbagai fitur, seperti registrasi akun,
+login, logout, manajemen buku, manajemen anggota, menampilkan statistik buku populer, dan review
+berupa rating dan comment buku dari pengguna.
+Proyek ini diharapkan dapat membantu mempermudah dalam mengakses layanan
+perpustakaan dengan mudah dan cepat, sekaligus mendukung peningkatan minat baca dan pelestarian
+koleksi perpustakaan. Masa pelaksanaan proyek dijadwalkan selama tiga bulan, mulai dari April
+hingga Juni 2025, dengan lokasi pengerjaan di kampus Universitas Multi Data Palembang. Hasil akhir
+dari proyek ini adalah aplikasi website perpustakaan yang modern, responsif, dan mudah digunakan
+oleh seluruh pengguna.
+v
+
+============================================================
+=== PAGE 6 ===
+============================================================
+BAB 1. PENDAHULUAN
+1. 1. Latar Belakang
+Di era digital saat ini, kebutuhan akan sistem informasi yang efektif dan efisien dalam
+pengelolaan data menjadi semakin penting, termasuk dalam bidang perpustakaan. Pengelolaan
+perpustakaan secara manual seringkali menghadapi berbagai kendala seperti kesulitan dalam
+pencatatan data buku, pengelolaan anggota, dan pemantauan transaksi peminjaman maupun
+pengembalian. Hal ini dapat menghambat pelayanan kepada pengguna dan menurunkan
+efisiensi operasional.
+Untuk mengatasi permasalahan tersebut, diperlukan sebuah sistem berbasis digital yang
+mampu mendukung aktivitas perpustakaan secara menyeluruh. Salah satu solusi yang dapat
+diterapkan adalah pengembangan aplikasi website perpustakaan digital. Aplikasi ini dapat
+membantu pengelola perpustakaan dalam mencatat dan mengelola data secara terpusat,
+memudahkan pengguna dalam mengakses informasi, serta meningkatkan transparansi dan
+akurasi data.
+GDeBook merupakan rancangan aplikasi website perpustakaan digital yang
+dikembangkan berdasarkan prototipe antarmuka pengguna (UI) yang telah dibuat
+menggunakan Figma. Desain yang digunakan mengusung tema modern dengan tampilan dark
+mode yang bersifat responsif dan mudah digunakan. Aplikasi ini dirancang untuk memuat fitur-
+fitur utama seperti halaman registrasi, login, dashboard informasi, manajemen data buku,
+pengelolaan anggota, serta pencatatan transaksi peminjaman dan pengembalian buku. Melalui
+pengembangan GDeBook, diharapkan pengelolaan perpustakaan dapat dilakukan dengan lebih
+efisien, terorganisir, dan sesuai dengan kebutuhan era digital.
+1. 2. Perumusan Masalah
+Berdasarkan uraian latar belakang, perumusan masalah dalam usulan proyek ini adalah
+bagaimana mengembangkan aplikasi website perpustakaan digital "GDeBook" yang dilengkapi
+fitur-fitur manajemen buku, anggota, serta transaksi peminjaman dan pengembalian, dengan
+tampilan antarmuka yang sesuai dengan desain Figma yang telah dibuat, dan ketentuan
+fungsional yang telah direncanakan sebelumnya.
+1
+
+============================================================
+=== PAGE 7 ===
+============================================================
+1. 3. Tujuan
+Proyek ini bertujuan menghasilkan aplikasi website perpustakaan digital bernama
+GDeBook yang dapat mempermudah pengelolaan data buku, anggota, dan transaksi
+peminjaman. Aplikasi ini dikembangkan berdasarkan desain antarmuka yang telah dibuat di
+Figma, dengan tampilan modern bernuansa gelap yang mudah digunakan. Fitur-fitur utama
+yang akan direalisasikan dalam website ini meliputi halaman registrasi, login, dashboard
+dengan statistik koleksi buku, peminjaman, pengembalian, manajemen data buku (tambah, edit,
+detail, hapus), pengelolaan anggota perpustakaan, serta pencatatan transaksi peminjaman dan
+pengembalian buku. Dengan tampilan yang intuitif dan terstruktur, GDeBook diharapkan dapat
+menjadi solusi digital yang efisien untuk kebutuhan manajemen perpustakaan.
+1. 4. Ruang Lingkup
+Pengembangan proyek ini dibatasi oleh ruang lingkup sebagai berikut:
+a. Platform pengembangan proyek ini adalah website (aplikasi berbasis web).
+b. Framework yang digunakan adalah Laravel (untuk backend) dan Bootstrap atau HTML,
+Blade, CSS, JavaScript (untuk frontend), disesuaikan dengan kebutuhan desain antarmuka.
+c. Hasil akhir proyek ini berupa aplikasi website yang dapat digunakan untuk mengelola data
+buku, data anggota, serta transaksi peminjaman dan pengembalian buku secara digital
+melalui antarmuka yang responsif dan mudah digunakan.
+d. Desain antarmuka pengguna (UI) didasarkan pada prototipe yang telah dibuat
+menggunakan Figma dengan tampilan modern dan tema gelap dan emas.
+e. Tidak mencakup integrasi dengan sistem pihak ketiga seperti email notifikasi, barcode
+scanner, atau sistem pembayaran.
+1. 5. Sistematika Proposal
+Sistematika penulisan dalam proposal proyek ini memberikan gambaran tentang
+substansi dari setiap bab yang dituliskan. Adapun sistematika penulisan proyek penelitian ini
+adalah sebagai berikut.
+a. Bab 1. Pendahuluan
+Bagian ini menjelaskan latar belakang proyek, dimana latar belakang menjelaskan
+tentang alasan mengapa proyek. Selanjutnya bagian ini juga merumuskan masalah
+hingga menjelaskan tujuan, ruang lingkup, dan sistematika proposal proyek mahasiswa.
+b. Bab 2. Tinjauan Pustaka
+Bagian ini menjelaskan teori-teori yang digunakan dalam proposal proyek hingga
+menjabarkan penelitian-penelitian terdahulu yang bersinggungan dengan topik yang
+diusulkan dalam proyek ini.
+2
+
+============================================================
+=== PAGE 8 ===
+============================================================
+c. Bab 3. Metode
+Bagian ini menjelaskan rencana dari tahapan-tahapan yang dilalui dalam pengembangan
+proyek mahasiswa.
+3
+
+============================================================
+=== PAGE 9 ===
+============================================================
+BAB 2. TINJAUAN PUSTAKA
+2. 1. Perpustakaan
+Perpustakaan merupakan sebuah institusi yang berfungsi sebagai pusat pengelolaan dan
+penyebaran informasi melalui koleksi bahan pustaka, baik yang berbentuk karya tulis, karya
+cetak, maupun karya rekam. Perpustakaan memiliki sistem pengelolaan yang profesional dan
+baku untuk mendukung berbagai tujuan, seperti pendidikan, penelitian, pelestarian budaya,
+serta penyediaan informasi dan rekreasi bagi para pemustaka.
+Dalam dunia pendidikan, perpustakaan memiliki peran strategis dalam menunjang
+proses pembelajaran. Keberadaannya membantu pelajar dan mahasiswa memperluas wawasan,
+memperdalam pengetahuan, serta mengakses informasi dari berbagai sumber yang tersedia.
+Seiring dengan perkembangan teknologi informasi, pengelolaan perpustakaan dituntut untuk
+semakin efektif dan efisien, agar mampu memenuhi kebutuhan informasi secara cepat dan
+akurat.
+Menurut Nugraha (2014), perpustakaan adalah koleksi yang terdiri dari bahan-bahan
+tertulis, tercetak, maupun grafis lainnya seperti film, slide, piringan hitam, atau tape, yang
+disusun dalam suatu ruangan atau gedung dan diorganisasikan dengan sistem tertentu agar dapat
+digunakan untuk kepentingan studi, penelitian, dan pembacaan. Dengan kata lain, perpustakaan
+tidak hanya menyediakan buku atau bahan bacaan, tetapi juga menghadirkan sistem informasi
+dan layanan yang mendukung kegiatan literasi dan intelektual masyarakat.
+Fokus utama perpustakaan adalah pengguna (user-oriented), sehingga setiap aktivitas
+seperti pengumpulan (collecting), pengolahan (processing), distribusi (distributing), dan
+pelestarian (preserving) koleksi dilakukan untuk memberikan layanan yang memuaskan kepada
+pemustaka. Dalam implementasinya, perpustakaan modern juga menghadapi tantangan seperti
+keterbatasan petugas, manajemen koleksi yang terus bertambah, serta kebutuhan untuk
+mengembangkan sistem digital agar lebih terintegrasi.
+2. 2. Anggota
+Anggota perpustakaan adalah pemustaka yang telah mendaftarkan diri secara resmi
+sebagai pengguna layanan suatu perpustakaan. Keanggotaan ini memberikan hak kepada
+individu untuk mengakses berbagai layanan perpustakaan, seperti peminjaman koleksi,
+konsultasi informasi, penggunaan ruang baca, serta layanan referensi lainnya. Menurut Taufiq,
+Wijaya, dan Rachman (2022), anggota perpustakaan adalah pemustaka yang tercatat dalam
+sistem keanggotaan perpustakaan dan dapat melakukan pendaftaran secara langsung maupun
+daring, tergantung pada kebijakan masing-masing lembaga.
+4
+
+============================================================
+=== PAGE 10 ===
+============================================================
+Lebih lanjut, dalam konteks perpustakaan umum seperti Dinas Arsip dan Perpustakaan
+Kota Bandung, anggota perpustakaan tidak terbatas pada individu tertentu, tetapi mencakup
+seluruh lapisan masyarakat, termasuk pelajar, mahasiswa, pekerja, hingga masyarakat umum
+tanpa batasan usia. Proses keanggotaan biasanya melibatkan pengisian data pribadi, verifikasi
+identitas, pengambilan foto, serta pencetakan kartu anggota yang berlaku selama lima tahun.
+Selain memperoleh akses terhadap layanan informasi dan peminjaman koleksi, anggota
+juga memiliki kewajiban untuk menjaga fasilitas dan mematuhi tata tertib yang berlaku. Sistem
+layanan ini telah terintegrasi secara digital menggunakan aplikasi Integrated Library System
+Lite (INLISLite) guna mendukung efisiensi dan kemudahan dalam pengelolaan data anggota.
+2. 3. Buku
+Buku merupakan salah satu bahan pustaka utama yang dikelola perpustakaan sebagai
+sumber informasi yang dapat dimanfaatkan oleh pemustaka. Dalam konteks perpustakaan
+sekolah, buku tidak hanya berperan sebagai media bacaan, tetapi juga sebagai sarana
+pendukung pembelajaran yang dapat meningkatkan efektivitas kegiatan belajar mengajar.
+Anjani, Niswati, dan Mutia (2020) menjelaskan bahwa buku yang dikelola dalam perpustakaan
+sekolah terdiri dari bahan pustaka yang diatur secara sistematis menurut aturan tertentu agar
+dapat digunakan sebagai sumber informasi oleh setiap pemakainya.
+Pengelolaan buku di perpustakaan meliputi pendataan, pencatatan peminjaman dan
+pengembalian, serta pembuatan laporan yang berhubungan dengan aktivitas sirkulasi. Dalam
+penelitian mereka, disebutkan bahwa sistem peminjaman buku yang masih dilakukan secara
+manual berisiko menyebabkan ketidaktepatan dalam pencatatan data. Oleh karena itu,
+dibutuhkan sistem yang terkomputerisasi untuk meningkatkan akurasi dan efisiensi dalam
+pengelolaan data buku, seperti yang diterapkan dalam perancangan aplikasi peminjaman buku
+di SDN Mekarjaya 11 Depok.
+Dengan demikian, buku dalam perpustakaan tidak hanya dipahami sebagai kumpulan
+cetakan atau tulisan, tetapi juga sebagai objek yang memerlukan manajemen sistematis guna
+mendukung fungsi perpustakaan sebagai penyedia layanan informasi yang cepat, tepat, dan
+akurat.
+5
+
+============================================================
+=== PAGE 11 ===
+============================================================
+2. 4. Website
+Website adalah sekumpulan halaman web yang saling terhubung dan dapat diakses
+melalui internet menggunakan browser. Halaman-halaman ini biasanya ditulis dalam bahasa
+pemrograman HTML (HyperText Markup Language) dan dapat berisi teks, gambar, video, serta
+elemen interaktif lainnya. Website berfungsi sebagai media untuk menyampaikan informasi,
+menyediakan layanan, dan memungkinkan interaksi antara pengguna dan penyedia konten.
+Dalam konteks perpustakaan, website digunakan sebagai platform untuk menyediakan
+akses informasi yang lebih luas dan efisien kepada pengguna. Website perpustakaan
+memungkinkan pengunjung untuk mencari koleksi buku, mengakses bahan pustaka digital, dan
+mendapatkan informasi terkait layanan perpustakaan secara real-time. Dengan adanya website,
+perpustakaan dapat menjangkau audiens yang lebih besar, termasuk pengguna yang tidak dapat
+mengunjungi perpustakaan secara fisik.
+Menurut Tewuh Clivan, Sugiarso, dan Sinsuw (2019), pemanfaatan website dalam
+lingkungan perpustakaan sangat penting untuk mendukung kebutuhan informasi yang cepat dan
+akurat. Website perpustakaan dapat mencakup fitur-fitur seperti katalog online, peminjaman
+buku, pengembalian, dan informasi tentang program-program perpustakaan. Semua fitur ini
+dirancang untuk memberikan kemudahan akses dan meningkatkan pengalaman pengguna
+dalam mencari dan menggunakan informasi.
+2. 5. Visual Studio Code
+Visual Studio Code adalah source code editor yang ringan namun memiliki fitur
+lengkap, dikembangkan oleh Microsoft untuk mendukung berbagai kebutuhan pengembangan
+perangkat lunak, termasuk aplikasi berbasis web. Visual Studio Code bersifat open-source dan
+cross-platform, sehingga dapat dijalankan pada sistem operasi Windows, macOS, dan Linux.
+Visual Studio Code mendukung berbagai bahasa pemrograman seperti HTML, CSS,
+JavaScript, Python, dan PHP. Editor ini dilengkapi dengan fitur seperti syntax highlighting,
+auto-completion, integrasi Git, terminal bawaan, dan ekstensi tambahan yang dapat diinstal
+sesuai kebutuhan pengembang. Salah satu fitur yang banyak digunakan adalah ekstensi Live
+Server yang memungkinkan pratinjau website secara langsung saat proses pengembangan
+berlangsung.
+Menurut Fauziah, Rahmadilla, dan Jannah (2024), Visual Studio Code digunakan
+sebagai alat utama dalam merancang website untuk UMKM Roti BB Bakery. Penggunaan
+Visual Studio Code memudahkan tim pengembang dalam menyusun struktur website,
+merancang tampilan antarmuka, dan menyesuaikan isi halaman dengan kebutuhan usaha.
+6
+
+============================================================
+=== PAGE 12 ===
+============================================================
+Dengan fitur-fitur yang tersedia, Visual Studio Code berperan penting dalam mempercepat
+proses pengembangan sekaligus menghasilkan website yang informatif dan interaktif sebagai
+etalase digital usaha.
+2.6. Laravel
+Laravel adalah framework open source berbasis PHP yang digunakan untuk
+mengembangkan aplikasi web dengan pendekatan arsitektur Model-View-Controller (MVC).
+Laravel dirancang oleh Taylor Otwell dan menyediakan berbagai fitur untuk mempermudah
+pengembangan sistem seperti pengelolaan modul, interaksi dengan database secara efisien,
+serta kemudahan dalam penyebaran dan pemeliharaan aplikasi. Laravel sangat sesuai
+digunakan dalam pembuatan sistem informasi berbasis web karena memiliki sintaks yang
+bersih, struktur kode yang rapi, dan dokumentasi yang lengkap (Sahrul, Safi’ie, & Decroly,
+2016).
+Framework ini juga menyediakan banyak fungsi bawaan untuk mengakses dan
+mengelola data dalam database, seperti menampilkan seluruh data, menyaring data dengan
+klausa tertentu, melakukan insert, update, hingga delete. Dengan keunggulan tersebut, Laravel
+telah menjadi salah satu framework PHP paling populer sejak tahun 2015, sejajar dengan
+framework lain seperti Symfony, CodeIgniter, dan Yii.
+2.7. Blade
+Blade adalah sebuah templating engine yang disediakan oleh framework Laravel untuk
+memudahkan proses pembuatan tampilan (front-end). Blade memungkinkan pengembang
+untuk menulis kode HTML yang bersih dan terstruktur dengan fitur seperti layout inheritance,
+komponen, dan directive yang memudahkan dalam pengelolaan tampilan. Dengan Blade,
+pengembang dapat membuat halaman web yang dinamis dan mudah dipelihara, serta
+mengintegrasikan data dari backend dengan lebih efisien (Chastro & Darmawan, 2020).
+2.8. Boostrap
+Bootstrap adalah sebuah framework CSS yang digunakan untuk mempercepat proses
+pembuatan tampilan web, terutama dalam menciptakan website yang responsif dan user-
+friendly. Bootstrap menyediakan berbagai class CSS yang terintegrasi dengan JavaScript dan
+jQuery, termasuk fitur grid system yang memudahkan pengaturan layout, sehingga tampilan
+website dapat menyesuaikan secara otomatis dengan ukuran layar perangkat yang digunakan
+pengunjung. Framework ini mencakup berbagai komponen seperti typography, tabel, form,
+7
+
+============================================================
+=== PAGE 13 ===
+============================================================
+navigasi, serta plugin jQuery yang mendukung berbagai elemen interaktif dan tampilan yang
+menarik(Putra & Rofiah, 2019).
+2.9. Prototyping
+Prototyping adalah metode dalam pengembangan sistem yang digunakan untuk
+menciptakan model awal (prototipe) dari sistem yang akan dibangun. Prototipe ini berfungsi
+sebagai representasi visual dan fungsional dari sistem akhir yang diinginkan, memungkinkan
+pengembang dan pemangku kepentingan untuk mengevaluasi serta memberikan umpan balik
+terhadap desain dan fungsionalitas sebelum implementasi penuh dilakukan. Metode ini bersifat
+iteratif, di mana pengembang dapat melakukan perbaikan dan penyesuaian berdasarkan umpan
+balik yang diterima dari pengguna, sehingga kebutuhan dan harapan pengguna dapat
+diakomodasi dengan lebih baik (Alfonsius et al., 2024). Prototyping juga membantu dalam
+mengurangi risiko kesalahan dalam pengembangan sistem, karena masalah dapat diidentifikasi
+dan diperbaiki lebih awal dalam proses. Selain itu, metode ini menawarkan fleksibilitas yang
+tinggi, memungkinkan perubahan desain yang lebih mudah dan cepat. Dengan demikian,
+prototyping merupakan pendekatan yang efektif dalam pengembangan sistem, terutama dalam
+konteks teknologi informasi dan perangkat lunak, yang dapat meningkatkan kepuasan
+pengguna dan mengurangi risiko kegagalan sistem.
+2.10. PHP
+PHP (PHP Hypertext Preprocessor) merupakan bahasa pemrograman server-side
+scripting yang disisipkan pada dokumen HTML dan memungkinkan pengembangan situs web
+dinamis. Bahasa ini bersifat open-source, didistribusikan secara gratis, dan ditulis
+menggunakan bahasa pemrograman C. Kemampuannya menjadikan situs web lebih efisien dan
+mudah dalam pemeliharaan menjadikan PHP sangat populer dalam dunia pengembangan web
+(Suhartanto, 2012).
+2.11. MySQL
+MySQL adalah sistem manajemen basis data yang bersifat open-source dan banyak
+digunakan dalam pengembangan aplikasi web. MySQL dikembangkan oleh perusahaan Swedia
+bernama MySQL AB dan menggunakan bahasa SQL (Structured Query Language) untuk
+pengelolaan databasenya. Kepopuleran MySQL didorong oleh kemudahan penggunaannya
+serta ketersediaannya secara gratis di berbagai platform (Suhartanto, 2012)
+8
+
+============================================================
+=== PAGE 14 ===
+============================================================
+2.12. Figma
+Figma adalah alat desain berbasis cloud yang digunakan untuk membuat tampilan
+aplikasi mobile, desktop, dan website. Aplikasi ini dapat diakses di berbagai sistem operasi
+seperti Windows, Linux, atau Mac dengan koneksi internet, dan sering digunakan oleh
+profesional di bidang UI/UX dan desain web. Salah satu keunggulan Figma adalah
+kemampuannya untuk memungkinkan kolaborasi secara real-time, sehingga beberapa orang
+dapat bekerja bersama pada proyek yang sama meskipun berada di lokasi yang berbeda
+(Muhyidin, Sulhan, & Sevtiana, 2020).
+9
+
+============================================================
+=== PAGE 15 ===
+============================================================
+BAB 3. METODE
+3. 1. Metode Pengembangan Perangkat Lunak
+Metode pengembangan perangkat lunak yang digunakan dalam proyek ini adalah
+metode prototyping. Metode ini dipilih karena memungkinkan proses pengembangan dilakukan
+secara iteratif dan responsif terhadap kebutuhan pengguna, terutama pada tahap awal ketika
+spesifikasi sistem belum sepenuhnya terdefinisi dengan jelas.
+Dengan menggunakan metode prototyping, pengembang dapat membuat model awal
+dari sistem (prototype) untuk memvisualisasikan antarmuka dan alur kerja aplikasi. Prototype
+ini kemudian digunakan sebagai dasar untuk memperoleh umpan balik dari calon pengguna
+atau pihak terkait, sehingga pengembang dapat melakukan penyempurnaan secara bertahap
+sebelum sistem akhir dibangun secara penuh.
+Pendekatan ini sangat sesuai untuk pengembangan sistem seperti aplikasi perpustakaan,
+yang membutuhkan perhatian pada aspek pengalaman pengguna, navigasi, dan fitur-fitur utama
+seperti pencarian buku, manajemen anggota, dan peminjaman buku. Dengan adanya prototype,
+validasi terhadap desain dan fungsi sistem dapat dilakukan lebih awal, yang pada akhirnya
+membantu memastikan bahwa sistem yang dikembangkan sesuai dengan ekspektasi pengguna
+dan kebutuhan operasional.
+Melalui siklus perbaikan yang berulang, metode prototyping memberikan fleksibilitas
+dalam menyesuaikan rancangan berdasarkan hasil evaluasi sementara. Hal ini menjadikan
+prototyping sebagai pendekatan yang efektif dalam menghasilkan sistem yang lebih matang
+dan relevan sebelum implementasi penuh dilakukan.Tahapan-tahapan metode prototyping yang
+digunakan dalam proyek GDeBook adalah sebagai berikut:
+1. Identifikasi Kebutuhan Awal
+Tahap ini mencakup pengumpulan informasi dasar mengenai fitur-fitur utama yang
+dibutuhkan dalam sistem, seperti pencatatan data buku, data anggota, peminjaman, dan
+pengembalian buku.
+2. Pembuatan Prototipe
+Berdasarkan kebutuhan awal, pengembang membuat rancangan antarmuka (UI)
+menggunakan Figma untuk memberikan gambaran awal mengenai tampilan dan navigasi
+sistem.
+3. Evaluasi Prototipe
+10
+
+============================================================
+=== PAGE 16 ===
+============================================================
+Prototipe yang telah dibuat kemudian ditunjukkan kepada pengguna atau stakeholder
+(dosen pembimbing/anggota kelompok) untuk mendapatkan masukan terhadap desain dan
+fungsionalitas awal.
+4. Perbaikan Prototipe
+Berdasarkan hasil evaluasi, prototype diperbaiki dan disesuaikan dengan kebutuhan
+pengguna. Perbaikan mencakup perubahan desain, penambahan fitur, dan penyempurnaan
+alur navigasi antarmuka.
+5. Pengujian Sistem
+Setelah prototype dikembangkan menjadi sistem yang fungsional, dilakukan pengujian
+terhadap seluruh fitur aplikasi. Tujuannya untuk memastikan bahwa sistem berjalan sesuai
+dengan kebutuhan dan bebas dari kesalahan (bug).
+6. Penerapan (Implementasi)
+Sistem yang telah diuji kemudian diimplementasikan atau dijalankan secara penuh di
+lingkungan pengguna. Dalam proyek ini, implementasi dilakukan dengan cara deployment
+ke platform cloud Vercel, sehingga sistem dapat diakses secara online melalui internet.
+Deployment ini bertujuan untuk memudahkan pengujian, demonstrasi, serta akses terhadap
+sistem tanpa terbatas oleh perangkat atau lokasi.
+7. Pemeliharaan (Maintenance)
+Tahap terakhir adalah pemeliharaan sistem. Pada tahap ini dilakukan perbaikan jika
+ditemukan bug setelah implementasi, serta kemungkinan pengembangan lebih lanjut jika
+diperlukan oleh pengguna.
+Penggunaan metode prototyping memungkinkan tim pengembang untuk lebih fleksibel
+dalam menyesuaikan sistem terhadap kebutuhan pengguna, serta menghindari kesalahan
+rancangan yang dapat terjadi jika spesifikasi sistem ditentukan sejak awal. Hal ini sangat
+penting dalam proyek seperti GDeBook yang melibatkan berbagai elemen visual dan interaktif.
+3.2. Analisis Kebutuhan
+Analisis kebutuhan dilakukan untuk mengidentifikasi dan mendokumentasikan semua
+kebutuhan yang diperlukan untuk pengembangan sistem. Analisis ini termasuk kebutuhan
+fungsional yang dibutuhkan pengguna dan kebutuhan desain antarmuka.
+11
+
+============================================================
+=== PAGE 17 ===
+============================================================
+3. 2. 1. Analisis Kebutuhan Fungsional
+Gambar 3.1. Diagram Use Case website GDeBOOK
+12
+
+============================================================
+=== PAGE 18 ===
+============================================================
+Use case di atas menggambarkan berbagai aktivitas yang dapat dilakukan oleh tiga jenis
+pengguna utama sistem, yaitu Admin, Member, dan Guest. Setiap aktor memiliki akses terhadap
+fitur-fitur tertentu sesuai perannya. Berdasarkan diagram tersebut, maka kebutuhan fungsional
+sistem dapat dilampirkan sebagai berikut:
+• FR1: Sistem dapat digunakan untuk melakukan login oleh pengguna terdaftar.
+• FR2: Sistem dapat digunakan untuk melakukan registrasi.
+• FR3: Sistem dapat digunakan untuk melihat daftar buku.
+• FR4: Sistem dapat digunakan untuk menambahkan data buku.
+• FR5: Sistem dapat digunakan untuk mengedit data buku yang sudah ada.
+• FR6: Sistem dapat digunakan untuk menghapus data buku.
+• FR7: Sistem dapat digunakan untuk melihat daftar anggota.
+• FR8: Sistem dapat digunakan untuk menambahkan data anggota baru.
+• FR9: Sistem dapat digunakan untuk mengedit data anggota.
+• FR10: Sistem dapat digunakan untuk menghapus data anggota.
+• FR11: Sistem dapat digunakan untuk melihat daftar peminjaman buku.
+• FR12: Sistem dapat digunakan untuk menambahkan data peminjaman buku.
+• FR13: Sistem dapat digunakan untuk mengedit data peminjaman buku.
+• FR14: Sistem dapat digunakan untuk menghapus data peminjaman buku.
+• FR15: Sistem dapat digunakan untuk melihat daftar review buku.
+• FR16: Sistem dapat digunakan untuk menambahkan review buku.
+• FR17: Sistem dapat digunakan untuk menghapus review buku.
+3. 2. 2. Analisis Desain Antarmuka
+Desain antarmuka pengguna (UI) sangat penting untuk memastikan pengalaman
+pengguna yang baik. Desain UI harus intuitif, menarik, dan mudah digunakan. Berikut adalah
+beberapa komponen utama dari desain antarmuka aplikasi:
+1. Halaman Login
+Tampilan Formulir input untuk nama pengguna dan kata sandi dan tombol login
+untuk pengguna yang sudah memiliki akun.
+13
+
+============================================================
+=== PAGE 19 ===
+============================================================
+Gambar 3.2. Desain antarmuka Login
+2. Halaman Registrasi
+Halaman registrasi untuk pengguna yang belum memiliki akun, pengguna akan
+ditampilkan formulir data data untuk mendaftarkan akun.
+14
+
+============================================================
+=== PAGE 20 ===
+============================================================
+Gambar 3.3 Registrasi
+3. Halaman Admin Dashboard
+GDeBook memiliki antarmuka dashboard yang memberikan informasi penting
+mengenai statistik total buku peminjaman perhari dalam bentuk statistik. Di bagian atas,
+terdapat informasi tentang total koleksi buku, total pengguna, dan total pinjaman.
+Gambar 3.4 Admin Dashboard
+4. Halaman Admin Book Index
+15
+
+============================================================
+=== PAGE 21 ===
+============================================================
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari buku
+berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data buku seperti
+judul, penulis, ketersediaan buku, serta tombol untuk mengubah dan menghapus data
+buku yang telah ada.
+Gambar 3.5 Admin Book Index
+5. Halaman Admin Add Book
+Pada halaman add book, pengguna (admin) dapat menambahkan buku baru. Data
+buku yang diinputkan berupa foto cover buku, judul, penulis, penerbit, ISBN, genre,
+tanggal publish, dan deskripsi singkat tentang buku.
+16
+
+============================================================
+=== PAGE 22 ===
+============================================================
+Gambar 3.6 Admin Add Book
+6. Halaman Detail Book
+Pada halaman detail book, pengguna akan ditampilkan data buku yang lengkap
+sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman ini juga
+terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah data buku
+jika ada perubahan, dan icon kotak sampah untuk menghapus data buku. Terdapat juga
+halaman review dari pengguna.
+17
+
+============================================================
+=== PAGE 23 ===
+============================================================
+Gambar 3.7 Detail Book
+7. Halaman Edit Book
+Pada halaman edit buku, pengguna dapat mengubah atau memperbarui data buku
+yang telah dibuat sebelumnya.
+18
+
+============================================================
+=== PAGE 24 ===
+============================================================
+Gambar 3.8 Edit Book
+8. Halaman Member Index
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari anggota
+berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data anggota seperti
+nama, email, jenis kelamin, alamat, serta tombol untuk mengubah dan menghapus data
+anggota yang telah ada.
+Gambar 3.9 Member Index
+9. Halaman Add Member
+19
+
+============================================================
+=== PAGE 25 ===
+============================================================
+Pada halaman add member, pengguna (admin) dapat menambahkan anggota baru.
+Data anggota yang diinputkan berupa foto, nama, email yang telah terdaftar, tanggal lahir,
+jenis kelamin, alamat, nomor telepon, dan pekerjaan.
+Gambar 3.10 Add Member
+10. Halaman Detail Member
+Pada halaman detail member, pengguna akan ditampilkan data anggota yang
+lengkap sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman
+ini juga terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah
+data buku jika ada perubahan, dan icon kotak sampah untuk menghapus data buku.
+20
+
+============================================================
+=== PAGE 26 ===
+============================================================
+Gambar 3.11 Detail Member
+11. Halaman Edit Member
+Pada halaman edit buku, pengguna dapat mengubah atau memperbarui data buku
+yang telah dibuat sebelumnya.
+Gambar 3.12 Edit Member
+12. Halaman Loan Index
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari
+peminjaman berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data
+peminjaman seperti nama anggota, book, tanggal peminjaman, tanggal kembali, status
+21
+
+============================================================
+=== PAGE 27 ===
+============================================================
+peminjaman, serta tombol untuk mengubah dan menghapus data peminjaman yang telah
+ada.
+Gambar 3.13 Loan Index
+13. Halaman Add Loan
+Admin membuka halaman ini ketika ada anggota yang ingin melakukan
+peminjaman buku. Terdapat formulir untuk mengisi data seperti id member, tanggal
+peminjaman, dan pilihan buku yang ingin dipinjam.
+Gambar 3.14 Add Loan
+14. Halaman Detail Loan
+22
+
+============================================================
+=== PAGE 28 ===
+============================================================
+Pada halaman detail loan, pengguna akan ditampilkan data peminjaman yang
+lengkap sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman
+ini juga terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah
+data buku jika ada perubahan, dan icon kotak sampah untuk menghapus data buku.
+Gambar 3.15 Detail Loan
+15. Halaman Edit Loan
+Pada halaman edit peminjaman, pengguna dapat mengubah atau memperbarui
+data peminjaman yang telah dibuat sebelumnya.
+Gambar 3.16 Edit Loan
+23
+
+============================================================
+=== PAGE 29 ===
+============================================================
+16. Halaman Loan History
+Halaman riwayat peminjaman menampilkan catatan lengkap peminjaman buku
+berdasarkan buku dan anggota. Pengguna dapat melihat histori peminjaman dari tiap buku
+maupun riwayat peminjaman yang dilakukan oleh masing-masing anggota. Halaman ini
+dirancang agar informasinya mudah dipahami dan diakses, mendukung pemantauan dan
+pelacakan aktivitas peminjaman dengan efisien.
+Gambar 3.17 Loan History Book
+24
+
+============================================================
+=== PAGE 30 ===
+============================================================
+Gambar 3.18 Loan History Member
+17. Halaman Member Book
+Pada halaman ini ditampilkan untuk pengguna yang telah mendaftar menjadi
+anggota. Halaman ini menampilkan buku-buku yang telah tersedia, yang juga terdapat
+search bar untuk mencari buku sesuai kata kunci.
+Gambar 3.19 Member Book
+18. Halaman Member Profile
+Pada halaman ini, anggota akan ditampilkan profile dengan data-data yang mereka
+daftarkan sebelumnya. Pada halaman ini, anggota juga dapat mengubah atau memperbarui
+data mereka, kemudian juga dapat menghapus foto profile.
+25
+
+============================================================
+=== PAGE 31 ===
+============================================================
+Gambar 3.20 Member Profile
+19. Halaman Member Loan
+Pada halaman ini, anggota akan ditampilkan riwayat peminjaman yang pernah
+dilakukan.
+26
+
+============================================================
+=== PAGE 32 ===
+============================================================
+Gambar 3.21 Member Loan
+27
+
+============================================================
+=== PAGE 33 ===
+============================================================
+BAB 4. HASIL DAN PEMBAHASAN
+4. 1. Teknologi
+Dalam pengembangan proyek GDeBook sebagai tugas akhir mata kuliah, teknologi
+yang digunakan dipilih berdasarkan kesesuaian dengan materi yang telah dipelajari selama
+perkuliahan dan untuk kemudahan penggunaan. Teknologi yang digunakan mencakup
+framework, bahasa pemrograman, basis data, serta alat bantu pengembangan. Berikut adalah
+penjelasan teknologi yang digunakan:
+No Komponen Teknologi Keterangan
+1 Framework Laravel Framework PHP berbasis MVC untuk
+pengembangan aplikasi web
+2 Bahasa PHP, HTML, Digunakan untuk logika backend dan tampilan
+Pemograman CSS, JavaScript frontend
+3 Basis Data MySQL Sistem manajemen basis data relasional
+4 Template Blade Digunakan untuk menyusun tampilan dengan
+Engine Laravel
+5 Desain Bootstrap, AOS Library CSS untuk tampilan responsif,
+Antarmuka komponen UI siap pakai, dan AOS untuk
+animasi saat scroll
+6 Dependency Composer Mengelola dependensi Laravel
+Manager
+7 Text Editor Visual Studio Editor kode sumber yang ringan dan mudah
+Code digunakan
+8 Version Control Git Digunakan untuk mencatat perkembangan
+proyek
+9 Web Server XAMPP Digunakan untuk menjalankan aplikasi Laravel
+secara lokal
+28
+
+============================================================
+=== PAGE 34 ===
+============================================================
+10 Repository Github Tempat menyimpan dan membagikan kode
+Hosting proyek secara online
+11 Visualisasi Hightcart Library JavaScript untuk menampilkan grafik
+Statistik interaktif (grafik buku populer)
+12 Vite Build tool modern yang cepat untuk proyek
+Frontend Build
+Laravel dan integrasi frontend
+Tool
+13 Starter Kit Auth Laravel Breeze Paket starter Laravel untuk otentikasi yang
+terintegrasi dengan Vite dan Blade
+14 Deployment Vercel Platform untuk melakukan deployment aplikasi
+web berbasis frontend/backend
+15 Image Hosting Claudinary Layanan penyimpanan dan pengelolaan media
+berbasis cloud (gambar cover buku, foto profil)
+4. 2. Fitur Aplikasi
+GDeBook memiliki berbagai fitur utama yang mendukung pengelolaan perpustakaan
+secara digital. Fitur-fitur ini dirancang untuk memberikan kemudahan bagi pustakawan dalam
+mengakses, mengelola, dan memantau data koleksi buku dan transaksi perpustakaan. Berikut
+adalah fitur-fitur yang disediakan:
+1. Registrasi Pengguna
+Pengguna dapat membuat akun pustakawan secara mandiri melalui halaman registrasi. Data
+yang dimasukkan meliputi nama lengkap, email, and password.
+2. Login dan Logout
+Setelah registrasi, pengguna dapat masuk ke sistem menggunakan email dan password yang
+terdaftar. Sistem akan mengelola sesi pengguna dan menyediakan fitur logout untuk
+mengakhiri sesi secara aman.
+3. Dashboard
+a. Setelah login, pengguna diarahkan ke dashboard yang menampilkan informasi penting
+seperti jumlah total buku, jumlah anggota aktif, serta jumlah peminjaman.
+b. Pada dashboard, pengguna juga akan ditampilkan statistik buku terpopuler yang dapat
+dijadikan referensi untuk meminjam buku.
+29
+
+============================================================
+=== PAGE 35 ===
+============================================================
+4. Profile
+Fitur ini memungkinkan member untuk melihat dan memperbarui informasi pribadi seperti
+nama dan email yang digunakan dalam akun mereka.
+5. Manajemen Buku
+Pengguna dapat menambahkan, memperbarui, melihat detail, dan menghapus data buku.
+Informasi buku mencakup nomor buku, judul, pengarang, penerbit, ISBN, kategori, tahun
+terbit, sinopsis, dan ketersediaan buku.
+6. Manajemen Anggota
+Digunakan untuk mencatat dan mengelola informasi anggota perpustakaan seperti nomor
+anggota, nama, email, tanggal lahir, jenis kelamin, alamat, nomor telepon, pekerjaan, dan
+status peminjaman.
+7. Peminjaman dan Pengembalian Buku
+Mencatat transaksi peminjaman oleh anggota. Pengguna dapat memilih buku dan informasi
+anggota, serta menentukan tanggal peminjaman dan lama peminjaman. Kemudian fitur ini
+digunakan untuk mencatat pengembalian buku dan memantau keterlambatan jika ada,
+berdasarkan tanggal kembali.
+8. Pencarian Buku dan Anggota
+Memungkinkan pengguna mencari koleksi buku dengan cepat menggunakan kata kunci
+tertentu seperti judul atau pengarang. Kemudian, anggota juga dapat mencari daftar anggota
+yang terdaftar berdasarkan nama.
+9. Review
+Memungkinkan pengguna memberikan review dalam bentuk rating dan komentar pada
+buku. Fitur ini bertujuan untuk meningkatkan interaksi pengguna terhadap koleksi serta
+menjadi referensi bagi pengguna lainnya.
+4.3. Repositori
+Link Repositori: https://github.com/Herlin6/PAWI-Tugas-UAS.git
+Nama Anggota UI (Figma) Web (Code) Laporan
+Herlin Dwi Vitaloka • Logo • Dashboard • Kebutuhan
+• Dashboard • Index book, fungsional (Use
+member, loan case)
+page • Metode
+• Detail book,
+member, dan
+loan
+30
+
+============================================================
+=== PAGE 36 ===
+============================================================
+• Delete book,
+member, dan
+loan
+• Review
+• Authentication
+• Authorization
+• Animation
+(AOS)
+• Pagination
+• Layout
+• Insert / remove /
+preview photo
+• Welcome page
+• User book page
+• User profile page
+• User loan page
+• Deploy
+Mayang Sari Nr • Login page • Login page • Tinjauan pustaka
+• Edit Loan • Add book, • Analisis Design
+• Detail Loan member, dan UI
+• Member index loan • UI Web
+book page • Daftar Pustaka
+• PPT Presentasi
+Gledys Apriliana • Register page • Create migration • Ringkasan
+• Index book, • Register page • Latar Belakang
+member, loan • Edit book, • Rumusan
+page member, dan masalah
+• Add book, loan • Tujuan
+member, loan • Ruang lingkup
+page • Metode
+• Edit book dan • Kebutuhan
+member fungsional (Use
+• Detail book dan case)
+member • Teknologi
+• Profile member • Fitur aplikasi
+page
+• Kesimpulan dan
+• Loan history Saran
+page
+• Welcome page
+31
+
+============================================================
+=== PAGE 37 ===
+============================================================
+4. 4. Antarmuka
+Tampilkan semua antarmuka dari aplikasi yang sudah dikembangkan. Lengkapi
+antarmuka dengan penjelasan per antarmuka. Berikut adalah tampilan antarmuka aplikasi:
+1. Halaman Welcome
+Tampilan halaman welcome ini merupakan tampilan utama menampilkan logo
+dan judul aplikasi "GDeBook" yang berada di tengah layar. Di bawahnya terdapat teks
+sambutan yang menginspirasi mengenai pentingnya literasi sebagai pintu gerbang
+pengetahuan dan pembelajaran sepanjang hayat. Terdapat dua tombol aksi utama, yaitu
+tombol "Login" dengan warna cokelat keemasan dan tombol "Register" dengan warna
+gelap, yang mudah dikenali dan dapat diakses untuk pengguna yang sudah memiliki akun
+maupun yang ingin mendaftar.
+Gambar 3. 22 Welcome
+2. Halaman Login dan Registrasi
+Tampilan Formulir input untuk nama pengguna dan kata sandi, tombol login, dan
+tombol registrasi untuk pengguna yang belum memiliki akun
+32
+
+============================================================
+=== PAGE 38 ===
+============================================================
+Gambar 3. 23 Login
+3. Halaman Registrasi
+Halaman registrasi untuk pengguna yang belum memiliki akun, pengguna akan
+ditampilkan formulir data data untuk mendaftarkan akun.
+Gambar 3. 24 Registrasi
+4. Halaman Admin Dashboard
+GDeBook memiliki antarmuka dashboard yang memberikan informasi penting
+mengenai buku terpopuler dalam bentuk statistik. Di bagian atas, terdapat informasi
+tentang total koleksi buku, total pengguna, dan total pinjaman.
+33
+
+============================================================
+=== PAGE 39 ===
+============================================================
+Gambar 3. 25 Admin Dashboard
+5. Halaman Book Index
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari buku
+berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data buku seperti
+judul, penulis, ketersediaan buku, serta tombol untuk mengubah dan menghapus data
+buku yang telah ada.
+Gambar 3. 26 Book Index
+6. Halaman Add Book
+Pada halaman add book, pengguna (admin) dapat menambahkan buku baru. Data
+buku yang diinputkan berupa foto cover buku, judul, penulis, penerbit, ISBN, genre,
+tanggal publish, dan deskripsi singkat tentang buku.
+34
+
+============================================================
+=== PAGE 40 ===
+============================================================
+Gambar 3. 27 Add Book
+7. Halaman Detail Book
+Pada halaman detail book, pengguna akan ditampilkan data buku yang lengkap
+sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman ini juga
+terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah data buku
+jika ada perubahan, dan icon kotak sampah untuk menghapus data buku.
+35
+
+============================================================
+=== PAGE 41 ===
+============================================================
+Gambar 3. 28 Detail Book
+8. Halaman Edit Book
+Pada halaman edit buku, pengguna dapat mengubah atau memperbarui data buku
+yang telah dibuat sebelumnya.
+36
+
+============================================================
+=== PAGE 42 ===
+============================================================
+Gambar 3. 29 Edit Book
+9. Halaman Member Index
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari anggota
+berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data anggota seperti
+nama, email, jenis kelamin, alamat, serta tombol untuk mengubah dan menghapus data
+anggota yang telah ada.
+Gambar 3. 30 Member Index
+10. Halaman Add Member
+Pada halaman add member, admin dapat menambahkan anggota baru. Data
+anggota yang diinputkan berupa foto, nama, email yang telah terdaftar, tanggal lahir, jenis
+kelamin, alamat, nomor telepon, dan pekerjaan.
+37
+
+============================================================
+=== PAGE 43 ===
+============================================================
+Gambar 3. 31 Add Member
+11. Halaman Detail Member
+Pada halaman detail member, pengguna akan ditampilkan data anggota yang
+lengkap sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman
+ini juga terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah
+data buku jika ada perubahan, dan icon kotak sampah untuk menghapus data buku.
+Gambar 3. 32 Detail Member
+12. Halaman Edit Member
+Pada halaman edit buku, pengguna dapat mengubah atau memperbarui data buku
+yang telah dibuat sebelumnya.
+38
+
+============================================================
+=== PAGE 44 ===
+============================================================
+Gambar 3. 33 Edit Member
+13. Halaman Loan Index
+Pada halaman ini, pengguna akan ditampilkan search bar untuk mencari
+peminjaman berdasarkan kata kunci. Kemudian juga ada tabel untuk menampilkan data
+peminjaman seperti nama anggota, book, tanggal peminjaman, tanggal kembali, status
+peminjaman, serta tombol untuk mengubah dan menghapus data peminjaman yang telah
+ada.
+Gambar 3. 34 Loan Index
+14. Halaman Add Loan
+Admin membuka halaman ini ketika ada anggota yang ingin melakukan
+peminjaman buku. Terdapat formulir untuk mengisi data seperti id member, tanggal
+peminjaman, dan pilihan buku yang ingin dipinjam.
+39
+
+============================================================
+=== PAGE 45 ===
+============================================================
+Gambar 3. 34 Add Loan
+15. Halaman Detail Loan
+Pada halaman detail loan, pengguna akan ditampilkan data peminjaman yang
+lengkap sesuai informasi yang telah ditambahkan sebelumnya. Kemudian, pada halaman
+ini juga terdapat navigasi icon pensil yang akan diarahkan ke edit page untuk mengubah
+data buku jika ada perubahan, dan icon kotak sampah untuk menghapus data buku.
+Gambar 3. 35 Detail Loan
+16. Halaman Edit Loan
+Pada halaman edit peminjaman, pengguna dapat mengubah atau memperbarui
+data peminjaman yang telah dibuat sebelumnya.
+40
+
+============================================================
+=== PAGE 46 ===
+============================================================
+Gambar 3. 36 Edit Loan
+17. Halaman Member Dashboard
+GDeBook memiliki antarmuka dashboard yang memberikan informasi penting
+mengenai buku terpopuler dalam bentuk statistik.
+Gambar 3. 37 Member Dashboard
+18. Halaman Profile Member
+Pada halaman Profile Member, pengguna dapat melihat data diri yang telah
+terdaftar pada sistem GDeBook. Informasi yang ditampilkan mencakup Nomor Member,
+Nama, Email, Tanggal Lahir, Jenis Kelamin, dan Alamat. Di bagian atas, terdapat foto
+profil pengguna dengan opsi "Remove Photo" untuk menghapus foto yang sudah
+diunggah. Navigasi menu utama tetap tersedia di bagian atas halaman untuk akses cepat
+ke fitur lain seperti Home, Book, Loan, Profile, dan Log Out.
+41
+
+============================================================
+=== PAGE 47 ===
+============================================================
+Gambar 3. 38 Profile Member
+19. Halaman Book Member
+Pada halaman Book Member, pengguna dapat melihat berbagai koleksi buku yang
+tersedia dalam sistem GDeBook. Setiap buku ditampilkan dengan cover, judul, penulis,
+rating bintang, dan status ketersediaan. Terdapat kolom pencarian di bagian atas yang
+memungkinkan pengguna mencari buku berdasarkan judul atau nama penulis, serta
+tombol Clear untuk menghapus hasil pencarian.
+Gambar 3. 39 Book Member
+20. Halaman Loan History
+Pada halaman Loan History, pengguna dapat melihat riwayat peminjaman buku
+yang pernah dilakukan. Informasi yang ditampilkan meliputi cover buku, judul, tanggal
+peminjaman, tanggal jatuh tempo, serta status peminjaman (Borrowed atau Returned)
+dengan penanda warna yang jelas.
+42
+
+============================================================
+=== PAGE 48 ===
+============================================================
+Gambar 3. 40 Loan History
+21. Halaman Guest Home (Dashboard)
+Pada halaman Guest Home Dashboard, pengunjung disambut dengan tampilan
+utama GDeBook Library yang menampilkan pesan selamat datang serta penjelasan
+singkat tentang fitur platform. Di bagian bawah, terdapat grafik batang yang menampilkan
+Top 5 Most Borrowed Books, memberikan gambaran buku-buku yang paling sering
+dipinjam.
+Gambar 3. 41 Guest Home
+22. Halaman Guest Book
+Pada halaman Guest Book, pengguna dapat melihat berbagai koleksi buku yang
+tersedia dalam sistem GDeBook. Setiap buku ditampilkan dengan cover, judul, penulis,
+rating bintang, dan status ketersediaan. Terdapat kolom pencarian di bagian atas yang
+memungkinkan pengguna mencari buku berdasarkan judul atau nama penulis, serta
+tombol Clear untuk menghapus hasil pencarian.
+43
+
+============================================================
+=== PAGE 49 ===
+============================================================
+Gambar 3. 42 Guest Book
+4. 5. Pengujian Aplikasi
+Berikut ini adalah pengujian terhadap aplikasi yang telah dikembangkan, dan diuraikan
+hasil pengujian tersebut, seperti berikut:
+Fitur yang Langkah Pengujian Hasil yang Hasil Pengujian Status
+Diuji Diharapkan
+Registrasi 1. Isi semua kolom form Akun berhasil Fitur bekerja Berhasil
+registrasi dengan data dibuat, pengguna sesuai
+valid. diarahkan ke ekspektasi.
+2. Klik tombol "Register" halaman dashboard.
+Login 1. Masukkan email dan Pengguna berhasil Fitur berjalan Berhasil
+password yang valid. masuk dan diarahkan dengan baik.
+2. Klik tombol "Login" ke halaman
+dashboard.
+Logout 1. Mengklik profile Pengguna berhasil Fitur berjalan Berhasil
+2. Klik tombol "Logout" masuk dan diarahkan dengan baik.
+ke halaman
+welcome.
+44
+
+============================================================
+=== PAGE 50 ===
+============================================================
+Dashboard Akses dashboard setelah Informasi statistik Statistik buku Berhasil
+login tampil dengan benar. dan anggota
+tampil sesuai
+data.
+Profile Buka halaman profil Informasi pengguna Nama dan email Berhasil
+pengguna tampil sesuai data tampil dengan
+akun yang benar.
+didaftarkan.
+Manajemen Tambah, edit, lihat detail, Data buku tersimpan Semua fungsi Berhasil
+Buku dan hapus data buku dan diperbarui sesuai berjalan sesuai
+input. harapan.
+Manajemen Tambah, edit, lihat detail, Data anggota Fungsi berjalan Berhasil
+Anggota dan hapus data anggota berhasil dikelola. normal dan data
+tampil sesuai.
+Peminjaman Tambah, edit, lihat detail, Fitur dapat berjalan Fitur bekerja dan Berhasil
+Buku dan hapus data dengan baik, dan menyimpan data
+peminjaman semua data dapat transaksi dengan
+kelola. baik.
+Pencarian Cari buku dengan kata Buku dan Anggota Hasil pencarian Berhasil
+Buku, kunci (judul/pengarang). ditampilkan sesuai akurat dan cepat.
+Anggota, dan Cari anggota dengan kata kata kunci pencarian
+Peminjaman kunci (nama yang diinputkan oleh
+anggota/email). Cari pengguna.
+peminjaman dengan kata
+kunci (nama
+anggota/judul buku)
+Review Tambah, lihat, hapus Ulasan dan rating Fitur berfungsi, Berhasil
+rating dan komentar ditampilkan pada ulasan tersimpan
+untuk data buku detail buku. dan muncul pada
+tampilan buku.
+45
+
+============================================================
+=== PAGE 51 ===
+============================================================
+BAB 5. KESIMPULAN DAN SARAN
+5. 1. Kesimpulan
+Berdasarkan hasil analisis, perancangan, implementasi, dan pengujian yang telah
+dilakukan, dapat disimpulkan bahwa aplikasi GDeBook berhasil dikembangkan sesuai dengan
+kebutuhan sistem layanan perpustakaan digital. Pengujian menunjukkan bahwa fitur-fitur
+utama seperti registrasi, login, logout, manajemen buku dan anggota, peminjaman dan
+pengembalian buku, serta pencarian buku dan anggota, review pengguna berupa rating dan
+komentar untuk buku berjalan dengan baik dan sesuai dengan harapan.
+Aplikasi ini dibangun menggunakan framework Laravel dan metode pengembangan
+prototyping, sehingga memungkinkan perbaikan berkelanjutan berdasarkan umpan balik
+pengguna. Dengan desain yang responsif dan fitur yang lengkap, GDeBook dapat menjadi
+solusi digital yang memudahkan pengelolaan data koleksi perpustakaan dan interaksi dengan
+pengguna secara efisien.
+5. 2. Saran
+Untuk pengembangan lebih lanjut dan peningkatan aplikasi GDeBook, berikut beberapa
+saran yang dapat dipertimbangkan:
+1. Fitur pengajuan peminjaman oleh anggota.
+2. Integrasi notifikasi email atau whatsapp, menambahkan fitur notifikasi otomatis untuk
+mengingatkan anggota tentang batas waktu peminjaman atau keterlambatan pengembalian
+buku.
+3. Fitur pencetakan laporan, menyediakan fungsi cetak atau ekspor laporan transaksi
+peminjaman dan pengembalian, daftar buku, dan data anggota dalam format PDF atau
+Excel.
+4. Peningkatan keamanan, mengimplementasikan validasi yang lebih ketat, enkripsi data
+pengguna, dan fitur two-factor authentication (2FA) untuk meningkatkan keamanan sistem.
+Dengan perbaikan dan pengembangan lanjutan berdasarkan saran tersebut, aplikasi
+GDeBook diharapkan dapat semakin optimal dalam mendukung transformasi layanan
+perpustakaan ke arah digital yang lebih modern, mudah diakses, dan ramah pengguna.
+46
+
+============================================================
+=== PAGE 52 ===
+============================================================
+DAFTAR PUSTAKA
+Alfonsius, E., Ruitan, A. S., & Liuw, D. (2024). Pengembangan sistem keamanan pintu
+menggunakan metode prototype berbasis RFID dan keypad 4x4 dengan Arduino Nano.
+Jurnal Ilmiah Informatika dan Ilmu Komputer (JIMA - ILKOM), 3(2), 110-123.
+https://doi.org/10.58602/jima-ilkom.v3i2.33
+Anjani, T., Niswati, Z., & Mutia, I. (2020). Perancangan aplikasi peminjaman buku
+perpustakaan pada SDN Mekarjaya 11 Depok. STRING (Satuan Tulisan Riset dan Inovasi
+Teknologi), 5(1), 101–107.
+Chastro, C., & Darmawan, E. (2020). Perbandingan pengembangan front end menggunakan
+Blade Template dan Vue Js. Jurnal Strategi, 2(2), 302-312.
+Fauziah, A. L., Rahmadilla, D., & Jannah, F. (2024). Perancangan website UMKM BB Bakery
+menggunakan Visual Studio Code. Jurnal Pemberdayaan: Publikasi Hasil Pengabdian
+Kepada Masyarakat, 2(2), 330-345. https://doi.org/10.47233/jipm.v2i2
+Muhyidin, M. A., Sulhan, M. A., & Sevtiana, A. (2020). Perancangan UI/UX aplikasi My CIC
+layanan informasi akademik mahasiswa menggunakan aplikasi Figma. Jurnal Teknologi
+dan Sistem Informasi, 10(2), 208-219.
+Nugraha, F. (2014). Analisa dan perancangan sistem informasi perpustakaan. Jurnal SIMETRIS,
+5(1), 27-32. https://doi.org/10.2252/4983
+Putra, M. Y., & Rofiah, S. (2019). Sistem informasi jasa laundry pada Melaway Laundry
+Bekasi. Jurnal Teknologi dan Sistem Informasi, 4(1), 55-64.
+Sahrul, F. B., Safi’ie, M. A., & Decroly, O. W. A. (2016). Implementasi sistem informasi
+akademik berbasis web menggunakan framework Laravel. Jurnal TRANSFORMASI:
+Jurnal Informasi dan Pengembangan Iptek (STMIK Bina Patria), 12(1), 46–50.
+Suhartanto, M. (2012). Pembuatan website sekolah menengah pertama negeri 3 Delanggu
+dengan menggunakan PHP dan MySQL. Jurnal SPEED – Sentra Penelitian Engineering
+dan Edukasi, 4(1).
+Taufiq, F. M., Wijaya, D. P., & Rachman, M. R. (2022). Analisis anggota perpustakaan pada
+Dinas Arsip dan Perpustakaan Kota Bandung tahun 2015–2021. Visi Pustaka, 24(2), 105–
+124. https://doi.org/10.37014/visipustaka.v24i2.3090
+Tewuh, C., Sugiarso, B. A., & Sinsuw, A. A. E. (2019). Aplikasi Website Perpustakaan STIE
+XYZ berbasis QR-Code. Jurnal Teknik Informatika, 14(1), 1-8. ISSN: 2301-8364.
+47

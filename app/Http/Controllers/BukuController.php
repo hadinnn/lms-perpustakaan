@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Buku;
 use App\Models\KategoriBuku;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class BukuController extends Controller
 {
@@ -99,6 +100,9 @@ class BukuController extends Controller
 
     public function destroy(Buku $buku)
     {
+        // Hanya Admin yang boleh menghapus buku
+        Gate::authorize('hapus-buku');
+
         if ($buku->transaksi()->where('status', 'dipinjam')->exists()) {
             return back()->with('error', 'Buku tidak dapat dihapus karena sedang dipinjam.');
         }
